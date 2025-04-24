@@ -10,11 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: install dependencies
         run: make setup
 
-      - name: Run linters
+      - name: run linters
         run: make lint
 
-      - name: Run tests
+      - name: run tests
         run: make test
